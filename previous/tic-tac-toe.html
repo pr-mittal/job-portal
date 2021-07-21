@@ -1,0 +1,61 @@
+<!--
+tic-tac-toe-bce
+password:hellodear1234
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/tic-tac-toe.js"></script>
+	<link href="css/tic-tac-toe.css" rel="stylesheet">
+</head>
+<body >
+<div id="window">
+<div id="btnrules">Show rules</div>
+<div class="modal">
+	<div id="rules" class="modal-content">
+	<span class="close">&times;</span>
+	<ul>
+		<li>The game is played on a grid that's 3 squares by 3 squares.</li>
+		<li>You are X, your friend is O. Players take turns putting their marks in empty squares.</li>
+		<li>The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.</li>
+		<li>When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.</li>
+	</ul>
+	</div>
+	
+</div>
+
+<div id="heading">TIC-TAC-TOE</div>
+<div id="table" width="100%">
+	<table rules="all" width="100%">
+		<tr>
+			<td class="turn" id="1" value="1"></td>
+			<td  class="turn" id="2" value="2"></td>
+			<td  class="turn" id="3" value="3"></td>
+		</tr>
+		<tr>
+			<td class="turn" id="4" value="4"></td>
+			<td class="turn" id="5" value="5"></td>
+			<td class="turn" id="6" value="6"></td>
+		</tr>
+		<tr>
+			<td class="turn" id="7" value="7"></td>
+			<td class="turn" id="8" value="8"></td>
+			<td class="turn" id="9" value="9"></td>
+		</tr>
+	</table>
+</div>
+<div id="choose">
+	<div id="cross" class="btn">x</div>
+	<div id="zero" class="btn">o</div>
+</div>
+<div>
+	<input type="text" disabled id="message">
+</div>
+<div><a href="tic-tac-toe-2.html"><input type="button" value="Next Level"></a></div>
+</div>
+</body>
+</html>

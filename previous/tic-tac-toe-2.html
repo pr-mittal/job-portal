@@ -1,0 +1,231 @@
+<!--
+tic-tac-toe-bce
+password:hellodear1234
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Document</title>
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/tic-tac-toe-2.js"></script>
+	<link rel="stylesheet" href="css/tic-tac-toe-2.css">
+</head>
+<body >
+<div id="window">
+<div id="btnrules">Show rules</div>
+<div class="modal">
+	<div id="rules" class="modal-content">
+	<span class="close">&times;</span>
+	<ul>
+		<li>The game is played on a grid that's 3 squares by 3 squares.</li>
+		<li>You are X, your friend is O. Players take turns putting their marks in empty squares and appoint square 3x3 for other player.</li>
+		<li>the players play to win or tie in sub 3x3 and to win bigger tic-tac-toe.</li>
+		<li>The first player to get 3 of her marks(tie and win combined together) in a row (up, down, across, or diagonally)in the bigger 3x3 is the winner.</li>
+		<li>When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.</li>
+	</ul>
+	</div>
+	
+</div>
+
+<div id="heading">TIC-TAC-TOE-PRO</div>
+<div id="table" width="100%">
+	<table rules="all" width="100%" id="main">
+		<tr class="mainrow">
+			<td class="turn" id="r1" value="1">
+				<table rules="all" width="100%" id="sub1" value="1">
+					<tr class="subrow">
+						<td class="turn" id="1" value="1"></td>
+						<td  class="turn" id="2" value="2"></td>
+						<td  class="turn" id="3" value="3"></td>
+					</tr >
+					<tr class="subrow">
+						<td class="turn" id="4" value="4"></td>
+						<td class="turn" id="5" value="5"></td>
+						<td class="turn" id="6" value="6"></td>
+					</tr>
+					<tr class="subrow">
+						<td class="turn" id="7" value="7"></td>
+						<td class="turn" id="8" value="8"></td>
+						<td class="turn" id="9" value="9"></td>
+					</tr>
+				</table>
+			</td>
+			<td  class="turn" id="r2" value="2">
+				<table rules="all" width="100%" id="sub2" value="2">
+					<tr class="subrow">
+						<td class="turn" id="10" value="10"></td>
+						<td  class="turn" id="11" value="11"></td>
+						<td  class="turn" id="12" value="12"></td>
+					</tr >
+					<tr class="subrow">
+						<td class="turn" id="13" value="13"></td>
+						<td class="turn" id="14" value="14"></td>
+						<td class="turn" id="15" value="15"></td>
+					</tr>
+					<tr class="subrow">
+						<td class="turn" id="16" value="16"></td>
+						<td class="turn" id="17" value="17"></td>
+						<td class="turn" id="18" value="18"></td>
+					</tr>
+				</table>
+
+			</td>
+			<td  class="turn" id="r3" value="3">
+				<table rules="all" width="100%" id="sub3" value="3">
+					<tr class="subrow">
+						<td class="turn" id="19" value="19"></td>
+						<td  class="turn" id="20" value="20"></td>
+						<td  class="turn" id="21" value="21"></td>
+					</tr >
+					<tr class="subrow">
+						<td class="turn" id="22" value="22"></td>
+						<td class="turn" id="23" value="23"></td>
+						<td class="turn" id="24" value="24"></td>
+					</tr>
+					<tr class="subrow">
+						<td class="turn" id="25" value="25"></td>
+						<td class="turn" id="26" value="26"></td>
+						<td class="turn" id="27" value="27"></td>
+					</tr>
+				</table>
+
+			</td>
+		</tr >
+		<tr class="mainrow">
+			<td class="turn" id="r4" value="4">
+				<table rules="all" width="100%" id="sub4" value="4">
+					<tr class="subrow">
+						<td class="turn" id="28" value="28"></td>
+						<td  class="turn" id="29" value="29"></td>
+						<td  class="turn" id="30" value="30"></td>
+					</tr >
+					<tr class="subrow">
+						<td class="turn" id="31" value="31"></td>
+						<td class="turn" id="32" value="32"></td>
+						<td class="turn" id="33" value="33"></td>
+					</tr>
+					<tr class="subrow">
+						<td class="turn" id="34" value="34"></td>
+						<td class="turn" id="35" value="35"></td>
+						<td class="turn" id="36" value="36"></td>
+					</tr>
+				</table>
+
+			</td>
+			<td class="turn" id="r5" value="5">
+				<table rules="all" width="100%" id="sub5" value="5">
+					<tr class="subrow">
+						<td class="turn" id="37" value="37"></td>
+						<td  class="turn" id="38" value="38"></td>
+						<td  class="turn" id="39" value="39"></td>
+					</tr >
+					<tr class="subrow">
+						<td class="turn" id="40" value="40"></td>
+						<td class="turn" id="41" value="41"></td>
+						<td class="turn" id="42" value="42"></td>
+					</tr>
+					<tr class="subrow">
+						<td class="turn" id="43" value="43"></td>
+						<td class="turn" id="44" value="44"></td>
+						<td class="turn" id="45" value="45"></td>
+					</tr>
+				</table>
+
+			</td>
+			<td class="turn" id="r6" value="6">
+				
+				<table rules="all" width="100%" id="sub6" value="6">
+					<tr class="subrow">
+						<td class="turn" id="46" value="46"></td>
+						<td  class="turn" id="47" value="47"></td>
+						<td  class="turn" id="48" value="48"></td>
+					</tr >
+					<tr class="subrow">
+						<td class="turn" id="49" value="49"></td>
+						<td class="turn" id="50" value="50"></td>
+						<td class="turn" id="51" value="51"></td>
+					</tr>
+					<tr class="subrow">
+						<td class="turn" id="52" value="52"></td>
+						<td class="turn" id="53" value="53"></td>
+						<td class="turn" id="54" value="54"></td>
+					</tr>
+				</table>
+
+			</td>
+		</tr>
+		<tr class="mainrow">
+			<td class="turn" id="r7" value="7">
+				<table rules="all" width="100%" id="sub7" value="7">
+					<tr class="subrow">
+						<td class="turn" id="55" value="55"></td>
+						<td  class="turn" id="56" value="56"></td>
+						<td  class="turn" id="57" value="57"></td>
+					</tr >
+					<tr class="subrow">
+						<td class="turn" id="58" value="58"></td>
+						<td class="turn" id="59" value="59"></td>
+						<td class="turn" id="60" value="60"></td>
+					</tr>
+					<tr class="subrow">
+						<td class="turn" id="61" value="61"></td>
+						<td class="turn" id="62" value="62"></td>
+						<td class="turn" id="63" value="63"></td>
+					</tr>
+				</table>
+
+			</td>
+			<td class="turn" id="r8" value="8">
+				<table rules="all" width="100%" id="sub8" value="8">
+					<tr class="subrow">
+						<td class="turn" id="64" value="64"></td>
+						<td  class="turn" id="65" value="65"></td>
+						<td  class="turn" id="66" value="66"></td>
+					</tr >
+					<tr class="subrow">
+						<td class="turn" id="67" value="67"></td>
+						<td class="turn" id="68" value="68"></td>
+						<td class="turn" id="69" value="69"></td>
+					</tr>
+					<tr class="subrow">
+						<td class="turn" id="70" value="70"></td>
+						<td class="turn" id="71" value="71"></td>
+						<td class="turn" id="72" value="72"></td>
+					</tr>
+				</table>
+
+			</td>
+			<td class="turn" id="r9" value="9">
+				<table rules="all" width="100%" id="sub9" value="9">
+					<tr class="subrow">
+						<td class="turn" id="74" value="73"></td>
+						<td  class="turn" id="75" value="74"></td>
+						<td  class="turn" id="76" value="75"></td>
+					</tr >
+					<tr class="subrow">
+						<td class="turn" id="77" value="76"></td>
+						<td class="turn" id="78" value="77"></td>
+						<td class="turn" id="79" value="78"></td>
+					</tr>
+					<tr class="subrow">
+						<td class="turn" id="80" value="79"></td>
+						<td class="turn" id="81" value="80"></td>
+						<td class="turn" id="" value="81"></td>
+					</tr>
+				</table>
+
+			</td>
+		</tr>
+	</table>
+</div>
+
+<div id="choose">
+	<div id="cross" class="btn">x</div>
+	<div id="zero" class="btn">o</div>
+</div>
+<div><input type="text" disabled id="message"></div>
+</div>
+</body>
+</html>

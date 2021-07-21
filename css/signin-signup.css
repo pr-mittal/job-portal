@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+	margin: 0px;
+}
+body { 
+	padding-top: 62px;
+	background-color: rgb(250,250,250);
+}
+#logoHref
+{
+	position:fixed;
+	top:1vh;
+	left: 1vh;
+	z-index:2;
+}
+#logoImg{
+	position:relative;
+	left:1vh;
+	bottom:-2vh;
+	width:10vw;
+	height:10vw;
+	border-radius:50%;
+	box-shadow:0 0 5px gray;
+}
+.mainHeading{
+	font-family: 'Bangers',serif;
+	font-size:10vh;
+	color:rgb(50,66,168);
+}
+.nav-item{
+    text-align: right;
+}
+
+.card{
+	text-align: center;
+}
+.card-img-top{
+	margin: auto;
+	max-height:50vh;
+	max-width: 70vw;
+}
+.card:hover{
+	box-shadow: 0 0 10px black;
+}
+.card p{
+	font-family: 'Merriweather',serif;
+	font-size:1rem;
+	color:white;
+	text-align: center;
+	background-color:rgb(50,50,50);
+	border-radius:5px;
+}
+#addressCard{
+	background-color: rgb(50,50,50);
+	color:white;
+}
+#addressCard:hover{
+	box-shadow: none;
+}
+.errmsg{
+	font-size:0.7rem;
+}
+#footer{
+	background-color:  rgb(50,50,50);
+	color:white;
+	text-align: center;
+	margin-top: 20px;
+}
