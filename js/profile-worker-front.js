@@ -21,12 +21,12 @@
 //-->
 
 $(document).ready(function(){
-    $(document).ajaxStart(function(){
-        $("#spinnerDiv").css("display","flex");
-    });
-    $(document).ajaxStop(function(){
-        $("#spinnerDiv").css("display","none");
-    });
+    // $(document).ajaxStart(function(){
+    //     $("#spinnerDiv").css("display","flex");
+    // });
+    // $(document).ajaxStop(function(){
+    //     $("#spinnerDiv").css("display","none");
+    // });
     $("#profilePic").click(function(){
         //alert("11");
        $("#profilePicFile").click();

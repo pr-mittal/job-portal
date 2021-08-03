@@ -27,12 +27,14 @@ $(document).ready(function(){
        $("#profilePicFile").click();
         
     });
-    $(document).ajaxStart(function(){
-        $("#spinnerDiv").css("display","flex");
-    });
-    $(document).ajaxStop(function(){
-        $("#spinnerDiv").css("display","none");
-    });
+    
+    // $(document).ajaxStart(function(){
+    //     $("#spinnerDiv").css("display","flex");
+    // });
+    // $(document).ajaxStop(function(){
+    //     $("#spinnerDiv").css("display","none");
+    // });
+
     //JSON CALL TO FETCH THE VALUES
     $("#fetchDetails").click(function(){
         var uid=$("#uid").val();
@@ -68,7 +70,7 @@ $(document).ready(function(){
                 }
         });
     });
-    document.getElementById("fetchDetails").click();
+    $("#fetchDetails").trigger('click'); 
     
 });
 var regex_mail=/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
